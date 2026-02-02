@@ -14,6 +14,21 @@
 
   "presets": [
     {
+      "id": "global",
+      "name": "Global Standards",
+      "description": "Organization-wide coding standards applied to all presets",
+      "path": "global",
+      "tags": ["global", "standards"],
+      "icon": "globe",
+      "files": {
+        "claudeMd": "CLAUDE.md"
+      },
+      "metadata": {
+        "author": "Platform Team",
+        "created": "2026-02-02"
+      }
+    },
+    {
       "id": "backend-api",
       "name": "Backend API Development",
       "description": "TypeScript/Node.js REST API with Hono, ArangoDB, and Zod validation",
