@@ -1,6 +1,61 @@
- {
-    "version": "1.0.0",
-    "organization": "Fahad-23",
-    "description": "Test Claude configs",
-    "presets": []
-  }
+{
+  "version": "1.0.0",
+  "organization": "FlowMaster",
+  "description": "Claude Code configuration presets for FlowMaster projects",
+  "lastUpdated": "2026-02-02T00:00:00Z",
+
+  "globalConfig": {
+    "path": "global",
+    "description": "Organization-wide coding standards applied to all presets",
+    "files": {
+      "claudeMd": "CLAUDE.md"
+    }
+  },
+
+  "presets": [
+    {
+      "id": "backend-api",
+      "name": "Backend API Development",
+      "description": "TypeScript/Node.js REST API with Hono, ArangoDB, and Zod validation",
+      "path": "presets/backend-api",
+      "tags": ["backend", "api", "typescript", "nodejs"],
+      "icon": "server",
+      "files": {
+        "claudeMd": "CLAUDE.md",
+        "skills": "skills.md"
+      },
+      "dependencies": ["global"],
+      "metadata": {
+        "author": "Platform Team",
+        "created": "2026-02-02"
+      }
+    },
+    {
+      "id": "frontend-react",
+      "name": "Frontend React Development",
+      "description": "React/TypeScript frontend with TailwindCSS and modern patterns",
+      "path": "presets/frontend-react",
+      "tags": ["frontend", "react", "typescript", "tailwind"],
+      "icon": "layout",
+      "files": {
+        "claudeMd": "CLAUDE.md"
+      },
+      "dependencies": ["global"],
+      "metadata": {
+        "author": "Platform Team",
+        "created": "2026-02-02"
+      }
+    }
+  ],
+
+  "tagGroups": [
+    {
+      "name": "Stack",
+      "tags": ["backend", "frontend", "fullstack"]
+    },
+    {
+      "name": "Language",
+      "tags": ["typescript", "python"]
+    }
+  ]
+}
